@@ -1,0 +1,164 @@
+<!DOCTYPE html> <!--specifies HTML5 other html types are more complicated -->
+<html>
+  <head>
+    <title>HTML Cheat Sheet</title> <!--title in the tab-->
+  </head>
+
+  <body>
+<!--headings-->
+      <h1>heading one</h1> <!--h1 is biggest and gets smaller as you go down-->
+      <h2>heading two</h2>
+      <h3>heading three</h3>
+      <h4>heading four</h4>
+      <h5>heading five</h5>
+      <h6>heading six</h6>
+
+<!--paragrapgh-->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore <strong>magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea <em>commodo consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat <a href="http://youtube.com">nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt <a href="http://google.com" target="blank">mollit anim id est laborum</a>.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+        <!--
+        strong -> bold
+        em (emphasis) -> italicize
+        a -> link tag (must include the http:// before site )
+            can use target = "blank" to open site in new tab
+        -->
+      </p>
+
+<!--Lists-->
+      <ul> <!--unordered(has bullet points)-->
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+      </ul>
+
+      <ol> <!--ordered(has numbers)-->
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+      </ol>
+
+<!--Tables (do not use for layout use only for tabular data)-->
+      <table>
+        <thead>           <!--table head-->
+          <tr>            <!--table row-->
+            <th>Name</th> <!--table heading-->
+            <th>E-mail</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+
+        <tbody>          <!--table body-->
+          <tr>           <!--table row-->
+            <td>Henry Chen</td>    <!--table data-->
+            <td>hchen101@binghamton.edu</td>
+            <td>21</td>
+          </tr>
+
+          <tr>           <!--table row-->
+            <td>Justin Wu</td>    <!--table data-->
+            <td>JWu51@gmail.edu</td>
+            <td>21</td>
+          </tr>
+
+          <tr>           <!--table row-->
+            <td>Bradley Korn</td>    <!--table data-->
+            <td>BKorn29@gmail.edu</td>
+            <td>26 </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br><!--line break-->
+      <hr><!--horizontal line-->
+      <br>
+
+<!-- FORM (can only build look of the form not functionality)-->
+      <form class="" action="index.php" method="post"> <!--for more advanced server side programming (GET vs POST)-->
+        <!-- ======================================= text ========================================== -->
+        <div class=""> <!--makes it a block element(next line)-->
+          <label for="">First Name</label>
+          <input type="text" name="firstName" value="" placeholder="Enter First Name">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="">Last Name</label>
+          <input type="text" name="LastName" value="">
+        </div>
+
+        <br>
+        <!-- ======================================= EMAIL ========================================== -->
+        <div>
+          <label for="">E-mail</label>
+          <input type="email" name="Email" value="">
+        </div>
+
+        <br>
+        <!-- ======================================= Message ========================================== -->
+        <div>
+          <label for="">Message</label>
+          <textarea name="Message" rows="8" cols="80"></textarea>
+        </div>
+
+        <br>
+        <!-- ==================================== Drop Down List ======================================= -->
+        <div>
+          <label for="">Gender</label>
+          <select class="" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <br>
+        <!-- ======================================= number ========================================== -->
+        <div>
+          <label for="">Age</label>
+          <input type="number" name="age" value="21">
+        </div>
+
+        <br>
+        <!-- ======================================= date ========================================== -->
+        <div>
+          <label for="">Birthay</label>
+          <input type="date" name="Birthday" value="">
+        </div>
+
+        <input type="submit" name="submit" value="SUBMIT"> <!-- gets submitted to index.php but that does not exist atm-->
+      </form>
+
+<!-- image -->
+      <img src="images/cat.jpg" alt="cute cat" width="600">
+      <!-- images will look in root folder 1st but we can specify path
+          alt gives description if pic cannot be loaded
+          width/height is available as an inline but usually done in css
+          we can wrap pic in a tag to ref link
+      -->
+
+<!-- Quotation -->
+     <blockquote cite="http://lorem.com"> <!-- cite is shown in source code -->
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+       eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+       deserunt mollit anim id est laborum.
+     </blockquote>
+
+     <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+     <p><cite>The Great Gatsby</cite> is a required read for high schoolers</p>
+
+  </body>
+</html>
